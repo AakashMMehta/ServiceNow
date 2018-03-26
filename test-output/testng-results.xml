@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="1464" started-at="2018-03-22T04:34:54Z" finished-at="2018-03-22T04:34:56Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="1464" started-at="2018-03-22T04:34:54Z" finished-at="2018-03-22T04:34:56Z">
+      <class name="testCase.Knowledge_Owner_rejects_modification">
+        <test-method status="PASS" signature="open()[pri:0, instance:testCase.Knowledge_Owner_rejects_modification@685cb137]" name="open" is-config="true" duration-ms="4111" started-at="2018-03-22T04:34:50Z" finished-at="2018-03-22T04:34:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- open -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:testCase.Knowledge_Owner_rejects_modification@685cb137]" name="beforeClass" is-config="true" duration-ms="0" started-at="2018-03-22T04:34:54Z" finished-at="2018-03-22T04:34:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="FAIL" signature="TestLogin(java.lang.String, java.lang.String)[pri:0, instance:testCase.Knowledge_Owner_rejects_modification@685cb137]" name="TestLogin" duration-ms="1410" started-at="2018-03-22T04:34:54Z" data-provider="Authentication" finished-at="2018-03-22T04:34:56Z">
+          <exception class="org.testng.internal.reflect.MethodMatcherException">
+            <message>
+              <![CDATA[
+Data provider mismatch
+Method: TestLogin([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}])
+Arguments: [(java.lang.String) TestCase003',(java.lang.String) batcat,(java.lang.String) jajjhn]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.reflect.MethodMatcherException: 
+Data provider mismatch
+Method: TestLogin([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}])
+Arguments: [(java.lang.String) TestCase003',(java.lang.String) batcat,(java.lang.String) jajjhn]
+at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:45)
+at org.testng.internal.Parameters.injectParameters(Parameters.java:796)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:982)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.reflect.MethodMatcherException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestLogin -->
+      </class> <!-- testCase.Knowledge_Owner_rejects_modification -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
