@@ -1,5 +1,6 @@
 package testCase;
 
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -36,7 +37,7 @@ public class Knowledge_Owner_rejects_modification extends TestBase {
 			}
 
 		} catch (Exception e) {
-
+			e.printStackTrace();
 		}
 	}  
 
@@ -63,7 +64,7 @@ public class Knowledge_Owner_rejects_modification extends TestBase {
 		}
 	}
 	
-	@DataProvider(name = "Authentication")
+	/*@DataProvider(name = "Authentication")
 
 	public Object[][] toolingDataProvider() {
 
@@ -87,8 +88,8 @@ public class Knowledge_Owner_rejects_modification extends TestBase {
 
 		return data;
 
-	}
-	/*@DataProvider(name = "Authentication")
+	}*/
+	@DataProvider(name = "Authentication")
 
 	  public Object[][] Authentication() throws Exception{
 
@@ -114,17 +115,16 @@ public class Knowledge_Owner_rejects_modification extends TestBase {
 
 		    	return (testObjArray);
 
-			}*/
+			}
 
 	
 
-	/*
-	 * @AfterMethod
-	 * 
-	 * public void afterMethod() {
-	 * 
-	 * driver.close();
-	 * 
-	 * }
-	 */
+	
+	 @AfterMethod
+	 
+	 public void afterMethod() {
+	 
+	 driver.close();
+	  
+	 }
 }
